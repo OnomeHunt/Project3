@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Prior_Terminations <= 0.5\ngini = 0.5\nsamples = 28369\nvalue = [22608, 22392]"] ;
+1 [label="#_of_Previous_Cesareans <= 0.5\ngini = 0.5\nsamples = 20366\nvalue = [16699, 15605]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Prior_Births_Living <= 0.5\ngini = 0.5\nsamples = 16124\nvalue = [16274, 9317]"] ;
+1 -> 2 ;
+3 [label="gini = 0.5\nsamples = 8527\nvalue = [7118, 6372]"] ;
+2 -> 3 ;
+4 [label="gini = 0.4\nsamples = 7597\nvalue = [9156, 2945]"] ;
+2 -> 4 ;
+5 [label="Medical_Attendant <= 2.5\ngini = 0.1\nsamples = 4242\nvalue = [425, 6288]"] ;
+1 -> 5 ;
+6 [label="gini = 0.1\nsamples = 4189\nvalue = [365, 6271]"] ;
+5 -> 6 ;
+7 [label="gini = 0.3\nsamples = 53\nvalue = [60, 17]"] ;
+5 -> 7 ;
+8 [label="Pre_Pregnancy_Weight <= 178.5\ngini = 0.5\nsamples = 8003\nvalue = [5909, 6787]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Medical_Attendant <= 2.5\ngini = 0.5\nsamples = 5353\nvalue = [4250, 4180]"] ;
+8 -> 9 ;
+10 [label="gini = 0.5\nsamples = 4904\nvalue = [3563, 4162]"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 449\nvalue = [687, 18]"] ;
+9 -> 11 ;
+12 [label="NO_RISK <= 0.5\ngini = 0.5\nsamples = 2650\nvalue = [1659, 2607]"] ;
+8 -> 12 ;
+13 [label="gini = 0.3\nsamples = 1432\nvalue = [522, 1806]"] ;
+12 -> 13 ;
+14 [label="gini = 0.5\nsamples = 1218\nvalue = [1137, 801]"] ;
+12 -> 14 ;
+}
